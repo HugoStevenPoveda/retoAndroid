@@ -22,4 +22,12 @@
         android:name="com.carnescarbon.retouno.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+      <fragment
+        android:id="@+id/nav_sucursal"
+        android:name="com.carnescarbon.retouno.ui.sucursal.SucursalFragment"
+        android:label="@string/menu_sucursales"
+        tools:layout="@layout/fragment_sucursal" />
+
+
 </navigation>
