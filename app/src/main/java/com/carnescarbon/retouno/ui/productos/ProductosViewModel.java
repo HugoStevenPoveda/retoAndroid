@@ -1,19 +1,24 @@
-package com.carnescarbon.retouno.ui.slideshow;
+package com.carnescarbon.retouno.ui.productos;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class ProductosViewModel extends ViewModel {
 
+    //Atributos
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    //Costructor
+    public ProductosViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("Nuestros Productos");
     }
 
+    //metods
     public LiveData<String> getText() {
+
         return mText;
     }
+
 }

@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.carnescarbon.retouno.R;
+
 import com.carnescarbon.retouno.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {

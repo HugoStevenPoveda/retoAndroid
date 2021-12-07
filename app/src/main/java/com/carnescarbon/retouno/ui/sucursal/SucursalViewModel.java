@@ -13,7 +13,7 @@ public class SucursalViewModel extends ViewModel {
     //Costructor
     public SucursalViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Nuevas SuCursales");
+        mText.setValue("Nuestras Sucursales");
     }
 
     //metods
