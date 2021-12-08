@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/drawable/border.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/drawable/ic_menu_camera.xml" value="0.13148148148148148" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/drawable/side_nav_bar.xml" value="0.22864583333333333" />
@@ -12,7 +13,7 @@
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/content_main.xml" value="0.175" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/fragment_home.xml" value="0.196875" />
-        <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/fragment_productos.xml" value="0.1398148148148148" />
+        <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/fragment_productos.xml" value="0.22" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/fragment_services.xml" value="0.1398148148148148" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/fragment_slideshow.xml" value="0.196875" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/fragment_sucursal.xml" value="0.19" />

@@ -1,12 +1,14 @@
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".ui.productos.ProductosFragment"
     >
-
+    <!--titulo principal-->
     <TextView
         android:id="@+id/text_producto"
         android:layout_width="match_parent"
@@ -21,4 +23,42 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+
+        >
+
+        <ImageView
+            android:id="@+id/imgp1"
+            android:layout_width="230dp"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:src="@drawable/prodc_hamburguesa"
+            android:layout_margin="8dp"/>
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/indie_flower_regular"
+
+            android:textAlignment="center"
+            android:textColor="#C62D2D"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            android:text="Hamburgesa" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
