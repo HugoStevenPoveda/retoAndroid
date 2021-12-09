@@ -74,19 +74,26 @@ public class ServicesFragment extends Fragment {
     }
 
     private void cargarLista() {
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_hamburguesa));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_perrito));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
-        listaServicios.add(new Servicio("hanburguesas","se realizan al por mayor", R.drawable.prodc_pollo));
+        listaServicios.add(new Servicio("Hamburguesa","La mejores Hamburguesas de la sabana", R.drawable.prodc_hamburguesa));
+        listaServicios.add(new Servicio("Perro Calientes","Deliciosos perros calientes , diferentes tipos de salchichas", R.drawable.prodc_perrito));
+        listaServicios.add(new Servicio("Pollo A la brasa","Delicioso Pollo a la brasa los mejores ingredientes ", R.drawable.prodc_pollo));
+        listaServicios.add(new Servicio("Chorizos","Delicioso Chorizos para todo gusto", R.drawable.prodc_chorizo));
+        listaServicios.add(new Servicio("Empanadas","Deliciosas empanadas de diferentes sabores", R.drawable.prodc_empanada));
+        listaServicios.add(new Servicio("Hamburguesa","La mejores Hamburguesas de la sabana", R.drawable.prodc_hamburguesa));
+        listaServicios.add(new Servicio("Perro Calientes","Deliciosos perros calientes , diferentes tipos de salchichas", R.drawable.prodc_perrito));
+        listaServicios.add(new Servicio("Pollo A la brasa","Delicioso Pollo a la brasa los mejores ingredientes ", R.drawable.prodc_pollo));
+        listaServicios.add(new Servicio("Chorizos","Delicioso Chorizos para todo gusto", R.drawable.prodc_chorizo));
+        listaServicios.add(new Servicio("Empanadas","Deliciosas empanadas de diferentes sabores", R.drawable.prodc_empanada));
+        listaServicios.add(new Servicio("Hamburguesa","La mejores Hamburguesas de la sabana", R.drawable.prodc_hamburguesa));
+        listaServicios.add(new Servicio("Perro Calientes","Deliciosos perros calientes , diferentes tipos de salchichas", R.drawable.prodc_perrito));
+        listaServicios.add(new Servicio("Pollo A la brasa","Delicioso Pollo a la brasa los mejores ingredientes ", R.drawable.prodc_pollo));
+        listaServicios.add(new Servicio("Chorizos","Delicioso Chorizos para todo gusto", R.drawable.prodc_chorizo));
+        listaServicios.add(new Servicio("Empanadas","Deliciosas empanadas de diferentes sabores", R.drawable.prodc_empanada));
+        listaServicios.add(new Servicio("Hamburguesa","La mejores Hamburguesas de la sabana", R.drawable.prodc_hamburguesa));
+        listaServicios.add(new Servicio("Perro Calientes","Deliciosos perros calientes , diferentes tipos de salchichas", R.drawable.prodc_perrito));
+        listaServicios.add(new Servicio("Pollo A la brasa","Delicioso Pollo a la brasa los mejores ingredientes ", R.drawable.prodc_pollo));
+        listaServicios.add(new Servicio("Chorizos","Delicioso Chorizos para todo gusto", R.drawable.prodc_chorizo));
+        listaServicios.add(new Servicio("Empanadas","Deliciosas empanadas de diferentes sabores", R.drawable.prodc_empanada));
     }
 
     @Override
