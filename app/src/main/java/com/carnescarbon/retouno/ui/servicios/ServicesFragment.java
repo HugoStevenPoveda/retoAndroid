@@ -64,11 +64,11 @@ public class ServicesFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 String nombre = listaServicios.get(recyclerViewServicio.getChildAdapterPosition(view)).getNombre();
-                String descripcion = listaServicios.get(recyclerViewServicio.getChildAdapterPosition(view)).getDescripciom();
                 Toast.makeText(getContext(),"selecionado: "+ nombre, Toast.LENGTH_LONG).show();
-                Toast.makeText(getContext(),"descripcion: "+ descripcion, Toast.LENGTH_SHORT).show();
-
                 interfaceComunicaFragments.enviarServicio(listaServicios.get(recyclerViewServicio.getChildAdapterPosition(view)));
+
+
+
             }
         });
     }

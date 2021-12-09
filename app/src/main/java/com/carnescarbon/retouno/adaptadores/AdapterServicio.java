@@ -4,10 +4,12 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.carnescarbon.retouno.R;
@@ -36,7 +38,7 @@ public class AdapterServicio extends RecyclerView.Adapter<AdapterServicio.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-       View view = inflater.inflate(R.layout.lista_servicios,parent,false);
+       View view = inflater.from(parent.getContext()).inflate(R.layout.lista_servicios,parent,false);
        view.setOnClickListener(this);
         return new ViewHolder(view);
     }
@@ -48,6 +50,7 @@ public class AdapterServicio extends RecyclerView.Adapter<AdapterServicio.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.cv.setAnimation(AnimationUtils.loadAnimation(inflater.getContext(), R.anim.fade_transition));
         String nombre = model.get(position).getNombre();
         String descripcion = model.get(position).getDescripciom();
         int imagen = model.get(position).getImageId();
@@ -81,6 +84,7 @@ public class AdapterServicio extends RecyclerView.Adapter<AdapterServicio.ViewHo
 
         TextView nombre, descripcion;
         ImageView imagen;
+        CardView cv;
 
 
 
@@ -89,6 +93,7 @@ public class AdapterServicio extends RecyclerView.Adapter<AdapterServicio.ViewHo
             nombre = itemView.findViewById(R.id.titulo_servicio);
             descripcion = itemView.findViewById(R.id.descripcion_service);
             imagen = itemView.findViewById(R.id.image_servicio);
+            cv = itemView.findViewById(R.id.cv);
 
 
         }
