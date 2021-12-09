@@ -6,8 +6,15 @@ import android.os.Bundle;
 import android.view.Menu;
 
 
+import com.carnescarbon.retouno.entidades.Servicio;
+import com.carnescarbon.retouno.ui.home.HomeFragment;
+import com.carnescarbon.retouno.ui.servicios.DetalleServicioFragment;
+import com.carnescarbon.retouno.ui.servicios.IComunicaFragments;
+import com.carnescarbon.retouno.ui.servicios.ServicesFragment;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -17,11 +24,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.carnescarbon.retouno.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements IComunicaFragments {
 
     //ATRIBUTOS
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+
+
+    //para cargar fragmet
+    FragmentManager fragmentManager;
+    FragmentTransaction fragmentTransaction;
+
+    ///atributos de fragment detalleservico
+    DetalleServicioFragment detalleServicioFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
     }
 
     @Override
@@ -58,5 +74,34 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void enviarServicio(Servicio servicio) {
+        ///logica para poder realizar el envio de fragmet a fragmert
+
+        detalleServicioFragment = new DetalleServicioFragment();
+        //objeto bundle para trasportar info
+
+        Bundle bundleEnvio = new Bundle();
+        //enviar el obejto
+        bundleEnvio.putSerializable("objeto",servicio);
+
+        detalleServicioFragment.setArguments(bundleEnvio);
+
+        //abrir  fragment
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.nav_host_fragment_content_main,detalleServicioFragment);
+        fragmentManager.popBackStack();
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+
+
+
+
+
+
+
     }
 }
