@@ -11,4 +11,11 @@
     <string name="menu_servicios">Servicios</string>
     <string name="menu_productos">Productos</string>
     <string name="menu_sucursales">Sucursales</string>
+
+    <!-- informarcion de para descripcion dde los productos-->
+    <string name="inf_hamburguesa">hamburguesa doble carne 100% carne</string>
+    <string name="inf_hotdog">HotDog con salchicha extra grande</string>
+    <string name="inf_pollo">pollo totalmente a la brasa </string>
+    <string name="inf_chorizo">chorizo 100% cerdo </string>
+    <string name="inf_empanada">Empanada 100% colombianas</string>
 </resources>
