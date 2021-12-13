@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RetoUno</string>
+    <string name="app_name">Carnes Carbon</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Carnes Carbon</string>
@@ -11,6 +11,7 @@
     <string name="menu_servicios">Servicios</string>
     <string name="menu_productos">Productos</string>
     <string name="menu_sucursales">Sucursales</string>
+    <string name="menu_favoritos">Favoritos</string>
 
     <!-- informarcion de para descripcion dde los productos-->
     <string name="inf_hamburguesa">hamburguesa doble carne 100% carne</string>
@@ -18,4 +19,15 @@
     <string name="inf_pollo">pollo totalmente a la brasa </string>
     <string name="inf_chorizo">chorizo 100% cerdo </string>
     <string name="inf_empanada">Empanada 100% colombianas</string>
+
+
+    <!--   informacion del crud de productos-->
+    <string name="txt_codigo">Código del producto</string>
+    <string name="txt_descripcion">Descripción del producto</string>
+    <string name="txt_precio">Precio del producto</string>
+    <string name="BotonRegistrar">Registrar Producto</string>
+    <string name="BotonBuscar">Buscar Producto</string>
+    <string name="BotonEliminar">Eliminar Producto</string>
+    <string name="BotonModificar">Modificar Producto</string>
+
 </resources>

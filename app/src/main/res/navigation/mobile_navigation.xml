@@ -28,6 +28,12 @@
         android:name="com.carnescarbon.retouno.ui.sucursal.SucursalFragment"
         android:label="@string/menu_sucursales"
         tools:layout="@layout/fragment_sucursal" />
+    <activity
+        android:id="@+id/nav_favorito"
+        android:name="com.carnescarbon.retouno.ui.favorite.favoritos"
+        android:label="@string/menu_favoritos"
+        tools:layout="@layout/activity_favoritos"/>
+
 
 
 </navigation>

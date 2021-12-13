@@ -22,6 +22,12 @@
             android:icon="@drawable/ic_baseline_maps_ugc_24"
             android:title="@string/menu_sucursales" />
             />
+        <item
+
+            android:id="@+id/nav_favorito"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="@string/menu_favoritos" />
+            />
 
 
     </group>
