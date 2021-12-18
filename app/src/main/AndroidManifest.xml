@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RetoUno">
         <activity
+            android:name=".ui.Sucursales"
+            android:exported="true" />
+        <activity
             android:name=".ui.favorite.favoritos"
             android:exported="true" />
         <activity

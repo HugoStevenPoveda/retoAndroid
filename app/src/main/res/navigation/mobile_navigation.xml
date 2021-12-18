@@ -33,6 +33,11 @@
         android:name="com.carnescarbon.retouno.ui.favorite.favoritos"
         android:label="@string/menu_favoritos"
         tools:layout="@layout/activity_favoritos"/>
+    <activity
+        android:id="@+id/nav_sucursales"
+        android:name="com.carnescarbon.retouno.ui.Sucursales"
+        android:label="@string/menu_sucursales1"
+        tools:layout="@layout/activity_sucursales"/>
 
 
 
