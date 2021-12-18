@@ -16,12 +16,7 @@
             android:id="@+id/nav_producto"
             android:icon="@drawable/ic_baseline_fastfood_24"
             android:title="@string/menu_productos" />
-        <item
 
-            android:id="@+id/nav_sucursal"
-            android:icon="@drawable/ic_baseline_maps_ugc_24"
-            android:title="@string/menu_sucursales" />
-            />
         <item
 
             android:id="@+id/nav_favorito"
