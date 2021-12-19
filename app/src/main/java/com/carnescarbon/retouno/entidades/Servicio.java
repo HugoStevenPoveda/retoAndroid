@@ -6,8 +6,8 @@ public class Servicio implements Serializable{
 
     //ATRIBUTOS
     private String nombre;
-    private String Descripciom;
-    private int imageId;
+    private String descripcion;
+    private int image;
 
     //CoSTRUCTOR
 
@@ -17,8 +17,8 @@ public class Servicio implements Serializable{
 
     public Servicio(String nombre, String descripciom, int imageId) {
         this.nombre = nombre;
-        Descripciom = descripciom;
-        this.imageId = imageId;
+        descripcion = descripciom;
+        this.image = imageId;
     }
 
     //METODS
@@ -31,19 +31,19 @@ public class Servicio implements Serializable{
         this.nombre = nombre;
     }
 
-    public String getDescripciom() {
-        return Descripciom;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setDescripciom(String descripciom) {
-        Descripciom = descripciom;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public int getImageId() {
-        return imageId;
+    public int getImage() {
+        return image;
     }
 
-    public void setImageId(int imageId) {
-        this.imageId = imageId;
+    public void setImage(int image) {
+        this.image = image;
     }
 }

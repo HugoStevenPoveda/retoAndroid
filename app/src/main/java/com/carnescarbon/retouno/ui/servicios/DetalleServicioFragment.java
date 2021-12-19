@@ -39,8 +39,8 @@ public class DetalleServicioFragment extends Fragment {
             servicio = (Servicio) objetoServicio.getSerializable("objeto");
             //establecer los datos en las vistas
             nombreDetalle.setText(servicio.getNombre());
-            descriptionDetalle.setText(servicio.getDescripciom());
-            imagenDetalle.setImageResource(servicio.getImageId());
+            descriptionDetalle.setText(servicio.getDescripcion());
+            imagenDetalle.setImageResource(servicio.getImage());
 
         }
 

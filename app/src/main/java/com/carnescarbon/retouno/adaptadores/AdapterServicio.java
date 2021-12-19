@@ -52,8 +52,8 @@ public class AdapterServicio extends RecyclerView.Adapter<AdapterServicio.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.cv.setAnimation(AnimationUtils.loadAnimation(inflater.getContext(), R.anim.fade_transition));
         String nombre = model.get(position).getNombre();
-        String descripcion = model.get(position).getDescripciom();
-        int imagen = model.get(position).getImageId();
+        String descripcion = model.get(position).getDescripcion();
+        int imagen = model.get(position).getImage();
 
         holder.nombre.setText(nombre);
         holder.descripcion.setText(descripcion);
