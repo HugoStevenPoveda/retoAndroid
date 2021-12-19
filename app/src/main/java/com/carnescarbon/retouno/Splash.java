@@ -9,7 +9,7 @@ import android.os.Handler;
 public class Splash extends AppCompatActivity {
 
     //ATRIBUTOS
-    private final int time = 1000;
+    private final int time = 700;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
