@@ -105,7 +105,7 @@ public class Sucursales extends AppCompatActivity implements OnMapReadyCallback 
         LatLng sedeChia = new LatLng(4.8620602425051, -74.0658555609996);
         mMap.addMarker(new MarkerOptions()
         .position(sedeChia)
-        .title("Sede Chia")
+        .title("CarnesCarbon Chia")
         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
 
 
@@ -114,14 +114,14 @@ public class Sucursales extends AppCompatActivity implements OnMapReadyCallback 
         LatLng sedeCajica = new LatLng(4.918718674571342, -74.0251259566748);
         mMap.addMarker(new MarkerOptions()
         .position(sedeCajica)
-        .title("Sede Cajica")
+        .title("CarnesCarbon Cajica")
         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
 
         //sucursal dos
         LatLng sedeBoogta = new LatLng(4.644847501889719, -74.0738007975409);
         mMap.addMarker(new MarkerOptions()
         .position(sedeBoogta)
-        .title("Sede Bogota")
+        .title("CarnesCarbon Bogota")
         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
 
 
