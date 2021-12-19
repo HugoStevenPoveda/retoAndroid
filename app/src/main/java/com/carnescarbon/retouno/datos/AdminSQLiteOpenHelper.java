@@ -11,6 +11,10 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
         super(context, name, factory, version);
     }
 
+
+
+
+
     @Override
     public void onCreate(SQLiteDatabase BaseDeDatos) {
         BaseDeDatos.execSQL("create table articulos(codigo int primary key, descripcion text, precio real)");
