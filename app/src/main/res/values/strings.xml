@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Carnes Carbon</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -30,5 +30,12 @@
     <string name="BotonBuscar">Buscar Producto</string>
     <string name="BotonEliminar">Eliminar Producto</string>
     <string name="BotonModificar">Modificar Producto</string>
+
+    <!--
+    KEY MAPS
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false" tools:ignore="ExtraTranslation">
+        AIzaSyBC6OHodr50cGV-7qX9tcFSVqdlTOVxBQk
+    </string>
 
 </resources>

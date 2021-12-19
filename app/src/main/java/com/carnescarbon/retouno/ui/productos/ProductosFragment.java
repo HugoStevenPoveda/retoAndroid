@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.carnescarbon.retouno.R;
-import com.carnescarbon.retouno.ui.sucursal.SucursalViewModel;
+
 
 public class ProductosFragment extends Fragment {
 
