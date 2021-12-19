@@ -39,16 +39,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class Sucursales extends AppCompatActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
-    private SupportMapFragment mMapFragment;
 
-    private double mExtraOriginLat;
-    private double mExtraOriginLng;
-
-    private double mExtraOriginLat1;
-    private double mExtraOriginLng1;
-
-    private LatLng mOriginLatLng;
-    private LatLng mOriginLatLng1;
+   private SupportMapFragment mMapFragment;
 
     private LocationRequest mLocationRequest;
     private FusedLocationProviderClient mFusedLocation;
@@ -88,30 +80,61 @@ public class Sucursales extends AppCompatActivity implements OnMapReadyCallback 
         }
     };
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sucursales);
-        mMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+
+
+
+        mMapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
         mMapFragment.getMapAsync(this);
 
         mFusedLocation = LocationServices.getFusedLocationProviderClient(this);
 
-        mExtraOriginLat = getIntent().getDoubleExtra("origin_lat", 4.5618939256);
-        mExtraOriginLng = getIntent().getDoubleExtra("origin_lng", -74.150210593);
-
-        mExtraOriginLat1 = getIntent().getDoubleExtra("origin_lat", 4.5618939256);
-        mExtraOriginLng1 = getIntent().getDoubleExtra("origin_lng", -74.180210593);
-
-        mOriginLatLng = new LatLng(mExtraOriginLat, mExtraOriginLng);
-        mOriginLatLng1 = new LatLng(mExtraOriginLat1, mExtraOriginLng1);
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+
+        //sucursal Uno
+        LatLng sedeChia = new LatLng(4.8620602425051, -74.0658555609996);
+        mMap.addMarker(new MarkerOptions()
+        .position(sedeChia)
+        .title("Sede Chia")
+        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
+
+
+
+        //sucursal dos
+        LatLng sedeCajica = new LatLng(4.918718674571342, -74.0251259566748);
+        mMap.addMarker(new MarkerOptions()
+        .position(sedeCajica)
+        .title("Sede Cajica")
+        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
+
+        //sucursal dos
+        LatLng sedeBoogta = new LatLng(4.644847501889719, -74.0738007975409);
+        mMap.addMarker(new MarkerOptions()
+        .position(sedeBoogta)
+        .title("Sede Bogota")
+        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sedeChia,11));
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         mMap.getUiSettings().setZoomControlsEnabled(true);
+
+
+
+
+
+
+
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
             return;
@@ -126,10 +149,10 @@ public class Sucursales extends AppCompatActivity implements OnMapReadyCallback 
 
         startLocation();
 
-        mMap.addMarker(new MarkerOptions().position(mOriginLatLng).title("Origen").icon(BitmapDescriptorFactory.fromResource(R.mipmap.icons8_restaurant_96)));
-        mMap.addMarker(new MarkerOptions().position(mOriginLatLng1).title("Origen").icon(BitmapDescriptorFactory.fromResource(R.mipmap.icons8_restaurant_96)));
 
     }
+
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -234,4 +257,6 @@ public class Sucursales extends AppCompatActivity implements OnMapReadyCallback 
         }
         return isActive;
     }
+
+
 }

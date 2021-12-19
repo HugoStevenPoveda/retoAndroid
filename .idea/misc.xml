@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/drawable/border.xml" value="0.16018518518518518" />
+        <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/drawable/ic_baseline_tapas_24.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/drawable/ic_menu_camera.xml" value="0.13148148148148148" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/drawable/side_nav_bar.xml" value="0.22864583333333333" />
@@ -26,6 +27,7 @@
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/lista_servicios.xml" value="0.25" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/nav_header_main.xml" value="0.5" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/sucursal_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/layout/sucursal_item.xml" value="0.18" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/menu/main.xml" value="0.33" />
         <entry key="..\:/Users/hugog/AndroidStudioProjects/RetoUno/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
