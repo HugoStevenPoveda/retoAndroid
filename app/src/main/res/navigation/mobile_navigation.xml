@@ -25,7 +25,7 @@
     <fragment
         android:id="@+id/nav_productoHome"
         android:name="com.carnescarbon.retouno.ui.productoHome.ProductoHomeFragment"
-        android:label="@string/menu_productos"
+        android:label="@string/menu_productoHome"
         tools:layout="@layout/fragment_producto_home" />
 
 

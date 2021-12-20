@@ -32,8 +32,8 @@
         <item
 
             android:id="@+id/nav_productoHome"
-            android:icon="@drawable/ic_baseline_maps_ugc_24"
-            android:title="@string/menu_sucursales1" />
+            android:icon="@drawable/ic_baseline_fastfood_24"
+            android:title="@string/menu_productoHome" />
             />
 
 

@@ -45,8 +45,8 @@
             android:layout_marginBottom="2dp"
             android:text="hugo"
             android:textColor="@android:color/black"
-            android:textSize="24dp"
-            android:textStyle="bold"
+            android:textSize="1dp"
+
 
 
             />
@@ -64,7 +64,10 @@
             android:layout_toEndOf="@+id/imgItem"
             android:layout_toRightOf="@+id/imgItem"
             android:text="Descripcion"
-            android:textSize="18dp"
+
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
             android:layout_margin="4dp"
             />
         <TextView
