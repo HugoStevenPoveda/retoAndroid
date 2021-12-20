@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:animateLayoutChanges="true"
+
+        >
+
+
+        <!--IMAGEN PRINCIPAL-->
+
+        <ImageView
+            android:id="@+id/imgItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher">
+        </ImageView>
+
+
+        <!--TITULO-->
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imgItem"
+            android:layout_toRightOf="@+id/imgItem"
+            android:layout_marginBottom="2dp"
+            android:text="hugo"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+
+            />
+
+
+        <!--DATOS-->
+
+        <TextView
+            android:id="@+id/tvCampo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvId"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imgItem"
+            android:layout_toRightOf="@+id/imgItem"
+            android:text="Descripcion"
+            android:textSize="18dp"
+            android:layout_margin="4dp"
+            />
+        <TextView
+            android:id="@+id/tvCampo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCampo1"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imgItem"
+            android:layout_toRightOf="@+id/imgItem"
+            android:text="Descripcion"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:id="@+id/tvCampo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCampo2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imgItem"
+            android:layout_toRightOf="@+id/imgItem"
+            android:text="Descripcion"
+            android:textSize="18dp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
